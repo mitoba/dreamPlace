@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html ng-app="RetirementProject">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Retire on a dime</title>
+    <link rel="stylesheet" href="https://rawgithub.com/yesmeck/jquery-jsonview/master/dist/jquery.jsonview.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body ng-controller="MainController as vm">
+    <div id="container" class="container-fluid">
+        <div id="header" class="page-header" align="center">
+            <h1 id="title">Retirement Destination </h1>
+            <h4 class="subTitle">See where you can get the most for your dollar!</h4>
+            <button class="btn btn-primary" ng-click="vm.compare()">Get Comparison</button>  
+        </div>
+        <div id="content">
+            <div id="mainBody1" class="col-md-4">
+                <p class="locations"> Starting Location</p>
+                <table class="table table-curved">
+                    <thead>
+                        <tr>
+                            <th id="locationTitles" colspan="2" bgcolor="#F9A646">
+                                <select placeholder="Current Location" ng-model="vm.startingCity" ng-options="location.city for location in vm.cities"></select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>location</td>
+                            <td>{{vm.start.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Consumer Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Consumer Prices Including Rent</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Rent Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Restraunt Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Grocery Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Local Purchasing Power</td>
+                            <td>value</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+            </div>
+            <div id="mainBody2" class="col-md-4">
+                <p class="locations">Destination</p>
+                <table class="table table-curved">
+                    <thead>
+                        <tr>
+                            <th id="locationTitles" colspan="2">
+                                <select placeholder="Current Location" ng-model="vm.destinationCity" ng-options="location.city for location in vm.cities"></select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Location</td>
+                            <td>{{vm.destination.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Consumer Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Consumer Prices Including Rent</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Rent Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Restraunt Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Grocery Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Local Purchasing Power</td>
+                            <td>value</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+            </div>
+            <div id="compare" class="col-md-4">
+                <p class="locations">&nbsp;<br /></p>
+                <table class="table table-curved">
+                    <thead>
+                        <tr>
+                            <th id="locationTitles" colspan="2">
+                                <font size="6">Comparison<br />&nbsp;</font>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Consumer Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Consumer Prices Including Rent</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Rent Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Restraunt Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Grocery Prices</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>Local Purchasing Power</td>
+                            <td>value</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+
+        <br />
+        <div id="footer">
+            <div class="col-md-2">
+                <img id="footerImages" src="kip-BB.jpg" alt="Kip Schossow" class="img-circle"><br />
+                Kip Schossow
+            </div>
+            <div class="col-md-2">
+                <img id="footerImages" src="Miguel.jpg" alt="Miguel de la Toba" class="img-circle"><br />
+                Miguel de la Toba
+            </div>
+            <p>
+                <script type="text/javascript">
+                    copyright = new Date();
+                    update = copyright.getFullYear();
+                    document.write("Copyright &copy; " + update);
+                </script>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="https://rawgithub.com/yesmeck/jquery-jsonview/master/dist/jquery.jsonview.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.6/angular.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/app/app.js" type="text/javascript"></script>
+</body>
+</html>

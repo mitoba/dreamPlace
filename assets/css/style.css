@@ -1,0 +1,115 @@
+﻿.body {
+    padding-top:5px;
+}
+#header {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9c/Walmart_International_Locations_Map.png);
+    height: 200px;
+
+}
+#container{
+   background-color:#EDD5D1;
+   border:2px solid gray;
+   padding-top: 3px;
+   box-shadow: 10px 10px 5px #888888;
+}
+.locations{
+    text-align:center;
+    font-family:'Lucida Sans Unicode';
+    color:#b5b5b5;
+    font-size:14px;
+}
+#locationTitles {
+    background-color:#F9A646;
+    padding-left: 10px;
+}
+.title{
+    color:#000000;
+    font-family: 'Lucida Sans Unicode';
+    font-weight: bold;
+}
+.subTitle{
+    color: 000000;
+    font-family: 'Lucida Sans Unicode';
+    font-weight: bold;
+}
+#footer{
+    background-color: #dde0cd;
+    text-align: center;
+}
+#mainBody1{
+    background-color:white;
+    float:left;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    width: 30%;
+    margin-right: 5%;
+}
+#mainBody2{
+    background-color:white;
+    float:left;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    width: 30%;
+    margin-right: 5%;
+}
+#compare{
+    background-color: white;
+    float: left;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    width: 30%;
+}
+#content{
+    width: 100%;
+    display: inline-block;
+}
+#footerImages{
+     height: 160px;
+     width:140px;
+}
+#home{
+    align-content:center;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.table-curved {
+     border: solid #b5b5b5 1px;
+     border-radius: 6px;
+     border-left:0px;
+     background-color: 000;
+     width: 100%;
+}
+.table-curved {
+    border-collapse: separate;
+}
+.table-curved {
+    border: solid #b5b5b5 1px;
+    border-radius: 6px;
+    border-left:0px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #b5b5b5;
+    border-top: 1px solid #b5b5b5;
+}
+.table-curved th {
+    border-top: none;
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
