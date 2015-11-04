@@ -36,6 +36,9 @@
     background-color: #dde0cd;
     text-align: center;
 }
+.img-circle{
+    border: solid 2px;
+}
 #mainBody1{
     background-color:white;
     float:left;

@@ -13,10 +13,12 @@
         <div id="header" class="page-header" align="center">
             <h1 id="title">Retirement Destination </h1>
             <h4 class="subTitle">See where you can get the most for your dollar!</h4>
-            <button class="btn btn-primary" ng-click="vm.compare()">Get Comparison</button>  
+            <button class="btn btn-primary" ng-click="vm.compare()">Get Comparison</button> 
+            {{vm.destinationCity.res.data}} 
         </div>
         <div id="content">
             <div id="mainBody1" class="col-md-4">
+                <br />
                 <p class="locations"> Starting Location</p>
                 <table class="table table-curved">
                     <thead>
@@ -28,12 +30,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>location</td>
+                            <td>Location</td>
                             <td>{{vm.start.name}}</td>
                         </tr>
                         <tr>
-                            <td>Consumer Prices</td>
-                            <td>value</td>
+                            <td>Hotel Prices</td>
+                            <td>{{vm.start.hotel_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
@@ -57,9 +59,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <br />
             </div>
             <div id="mainBody2" class="col-md-4">
+                <br />
                 <p class="locations">Destination</p>
                 <table class="table table-curved">
                     <thead>
@@ -75,8 +77,8 @@
                             <td>{{vm.destination.name}}</td>
                         </tr>
                         <tr>
-                            <td>Consumer Prices</td>
-                            <td>value</td>
+                            <td>Hotel Prices</td>
+                            <td>{{vm.destination.hotel_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
@@ -100,22 +102,21 @@
                         </tr>
                     </tbody>
                 </table>
-                <br />
             </div>
             <div id="compare" class="col-md-4">
-                <p class="locations">&nbsp;<br /></p>
+                <p class="locations">&nbsp;<br /><br /></p>
                 <table class="table table-curved">
                     <thead>
                         <tr>
                             <th id="locationTitles" colspan="2">
-                                <font size="6">Comparison<br />&nbsp;</font>
+                                <font size="4">Comparison<br />&nbsp;</font>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Consumer Prices</td>
-                            <td>value</td>
+                            <td>Hotel Price Diffence</td>
+                            <td>{{vm.destination.hotel_price_index - vm.start.hotel_price_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.hotel_price_index - vm.start.hotel_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
@@ -139,18 +140,17 @@
                         </tr>
                     </tbody>
                 </table>
-                <br />
             </div>
         </div>
 
         <br />
         <div id="footer">
-            <div class="col-md-2">
-                <img id="footerImages" src="kip-BB.jpg" alt="Kip Schossow" class="img-circle"><br />
+            <div class="col-md-6">
+                <img id="footerImages" src="/assets/img/Kip-BB.jpg" border="1" alt="Kip Schossow" class="img-circle"><br />
                 Kip Schossow
             </div>
-            <div class="col-md-2">
-                <img id="footerImages" src="Miguel.jpg" alt="Miguel de la Toba" class="img-circle"><br />
+            <div class="col-md-6">
+                <img id="footerImages" src="/assets/img/Miguel.jpg" border="1" alt="Miguel de la Toba" class="img-circle"><br />
                 Miguel de la Toba
             </div>
             <p>
