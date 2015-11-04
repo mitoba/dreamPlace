@@ -14,7 +14,6 @@
             <h1 id="title">Retirement Destination </h1>
             <h4 class="subTitle">See where you can get the most for your dollar!</h4>
             <button class="btn btn-primary" ng-click="vm.compare()">Get Comparison</button> 
-            {{vm.destinationCity.res.data}} 
         </div>
         <div id="content">
             <div id="mainBody1" class="col-md-4">
@@ -34,28 +33,28 @@
                             <td>{{vm.start.name}}</td>
                         </tr>
                         <tr>
-                            <td>Hotel Prices</td>
-                            <td>{{vm.start.hotel_price_index | number: 2}}</td>
+                            <td>Consumer Price Index</td>
+                            <td>{{vm.start.cpi_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
-                            <td>value</td>
+                            <td>{{vm.start.cpi_and_rent_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Rent Prices</td>
-                            <td>value</td>
+                            <td>{{vm.start.rent_index | number: 2}}</td>
                         </tr>
                         <tr>
-                            <td>Restraunt Prices</td>
-                            <td>value</td>
+                            <td>Restaurant Prices</td>
+                            <td>{{vm.start.restaurant_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Grocery Prices</td>
-                            <td>value</td>
+                            <td>{{vm.start.groceries_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Local Purchasing Power</td>
-                            <td>value</td>
+                            <td>{{vm.start.purchasing_power_incl_rent_index | number: 2}}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -77,28 +76,28 @@
                             <td>{{vm.destination.name}}</td>
                         </tr>
                         <tr>
-                            <td>Hotel Prices</td>
-                            <td>{{vm.destination.hotel_price_index | number: 2}}</td>
+                            <td>Consumer Price Index</td>
+                            <td>{{vm.destination.cpi_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
-                            <td>value</td>
+                            <td>{{vm.destination.cpi_and_rent_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Rent Prices</td>
-                            <td>value</td>
+                            <td>{{vm.destination.rent_index | number: 2}}</td>
                         </tr>
                         <tr>
-                            <td>Restraunt Prices</td>
-                            <td>value</td>
+                            <td>Restaurant Prices</td>
+                            <td>{{vm.destination.restaurant_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Grocery Prices</td>
-                            <td>value</td>
+                            <td>{{vm.destination.groceries_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Local Purchasing Power</td>
-                            <td>value</td>
+                            <td>{{vm.destination.purchasing_power_incl_rent_index | number: 2}}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -115,28 +114,28 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Hotel Price Diffence</td>
-                            <td>{{vm.destination.hotel_price_index - vm.start.hotel_price_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.hotel_price_index - vm.start.hotel_price_index | number: 2}}</td>
+                            <td>Consumer Price Index Diffence</td>
+                            <td>{{vm.destination.cpi_index - vm.start.cpi_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.cpi_index - vm.start.cpi_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Consumer Prices Including Rent</td>
-                            <td>value</td>
+                            <td>{{vm.destination.cpi_and_rent_index - vm.start.cpi_and_rent_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.cpi_and_rent_index - vm.start.cpi_and_rent_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Rent Prices</td>
-                            <td>value</td>
+                            <td>{{vm.destination.rent_index - vm.start.rent_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.rent_index - vm.start.rent_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Restraunt Prices</td>
-                            <td>value</td>
+                            <td>{{vm.destination.restaurant_price_index - vm.start.restaurant_price_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.restaurant_price_index - vm.start.restaurant_price_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Grocery Prices</td>
-                            <td>value</td>
+                            <td>{{vm.destination.groceries_index - vm.start.groceries_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.groceries_index - vm.start.groceries_index | number: 2}}</td>
                         </tr>
                         <tr>
                             <td>Local Purchasing Power</td>
-                            <td>value</td>
+                            <td>{{vm.destination.purchasing_power_incl_rent_index - vm.start.purchasing_power_incl_rent_index > 0 ? '&uarr;' : '&darr;'}} {{vm.destination.purchasing_power_incl_rent_index - vm.start.purchasing_power_incl_rent_index | number: 2}}</td>
                         </tr>
                     </tbody>
                 </table>
