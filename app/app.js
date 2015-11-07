@@ -1,6 +1,6 @@
 ﻿//Starting functions. Will refactor to make things private and move into a Service or Controller.
 
-var app = angular.module('RetirementProject', ['RetirementProject-weather']);
+var app = angular.module('RetirementProject', []);
 app.controller('MainController', MainController);
 app.service('NumbeoService', NumbeoService);
 //Locations dictionary
