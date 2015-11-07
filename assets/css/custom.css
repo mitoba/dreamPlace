@@ -5,4 +5,57 @@
     font-size: 1em;
     padding: 10px 12px;
     background: none;
+    background-color: white;
+}
+h4 {
+     color: #000000;
+     text-align: center;
+}
+h2 {
+     color: #ffffff;
+     text-align: center;
+}
+.services {
+    background-color: #5800B2 ;
+}
+.locations {
+    color: white;
+}
+#footer {
+    background-color: #dde0cd;
+    text-align: center;
+}
+#footerImages {
+     height: 160px;
+     width: 140px;
+}
+.table-curved {
+     border: solid #b5b5b5 1px;
+     border-radius: 6px;
+     border-left:0px;
+     background-color: 000;
+     width: 100%;
+     border-collapse: separate;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #b5b5b5;
+    border-top: 1px solid #b5b5b5;
+}
+.table-curved th {
+    border-top: none;
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
 }
