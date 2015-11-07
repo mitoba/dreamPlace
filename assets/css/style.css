@@ -31,10 +31,11 @@ body a:hover{
 }
 /*--banner--*/
 .banner{
-	min-height: 750px;
+	min-height: 550px;
 	background:url(../images/banner1.jpg)no-repeat 0px 0px;
 	background-size:cover;
 	position: relative;
+    vertical-align: text-top;
 }
 .headder {
     background: rgba(78, 197, 241, 0.81);
