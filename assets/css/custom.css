@@ -59,3 +59,10 @@ h2 {
 .table-curved tr:last-child td:last-child {
     border-radius: 0 0 6px 0;
 }
+
+.cate{
+	color:black;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:300;
+}
